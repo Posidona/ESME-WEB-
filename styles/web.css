@@ -18,10 +18,6 @@ img {
 
 }
 
-.logo{
-	max-width: 80px;
-}
-
 ul{
 	
 	list-style: none;
@@ -33,7 +29,8 @@ ul{
 	
 }
 
-.list-item, .logo, .menu:hover{
+
+.list-item{
 	cursor: pointer;
 	padding: 0px 10px;
 	transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -43,6 +40,7 @@ ul{
 	opacity: .6;
 }
 
+
 .imagen-central{
 	width: 100%;
 	background: no-repeat;
@@ -50,10 +48,13 @@ ul{
 	height: 100%;
 }
 
+
 .imagenes-peques {
     display: flex;
     justify-content: space-between;
 }
+
+
 
 .imagenes-peques img {
 	width: 100%;
@@ -74,60 +75,6 @@ ul{
 	border-right: 0px;
 }
 
-.menu:hover{
-	position: relative;
-	transition: right -80;
+footer{
 
 }
-
-@media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) {
-
-div.nav {
-  color: red;
-  font-family: sans-serif;
-}
-}
-
-
-@media only screen 
-  and (max-width: 768px) {
-
-  	.menu, .logo{
-
-  		display:block;
-  		width:auto;
-  		padding: 5px, 10px;
-
-
-  	}
-  	.menu{
-  		position: relative;
-  		right: -80px;
-  	}
-  	li.list-item{
-  		display: none;
-  		width: 100%
-  		padding:10px ;
-  		
-  	}
-
-  }
-@media only screen 
-  and (max-width: 450px) {
-
-  	div.nav{
-  		padding: 0;
-  	}
-
-  	ul.nav-bar{
-  		flex-wrap: wrap;
-  		width: 100%;
-  	}
-
-  	li.list-item{
-  		width: 100%
-  		padding:10px ;
-  	}	
-  }

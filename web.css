@@ -25,15 +25,20 @@ img {
 ul{
 	
 	list-style: none;
-	display: flex;
-	justify-content: space-between;	
-	align-items: center;
-	padding: 0px 15px;
-	margin: 0;
 	
 }
 
-.list-item, .logo, .menu:hover{
+.nav-bar{ 
+  width: 100%;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  padding: 0px 15px;
+  margin: 0;
+
+}
+
+.list-item{
 	cursor: pointer;
 	padding: 0px 10px;
 	transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -45,21 +50,22 @@ ul{
 
 .imagen-central{
 	width: 100%;
-	background: no-repeat;
 	background-image: url(http://images.apple.com/v/music/e/images/overview/family_hero_large.jpg;); 
-	height: 100%;
+	
 }
 
 .imagenes-peques {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
+
 
 .imagenes-peques img {
 	width: 100%;
 	padding:1px;
-    box-sizing: border-box;
-    overflow: visible;
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .caja-imagenes {
@@ -74,11 +80,52 @@ ul{
 	border-right: 0px;
 }
 
-.menu:hover{
-	position: relative;
-	transition: right -80;
+footer{
+  font-size: 11px;
+    line-height: 1.45455;
+    font-weight: 400;
+    letter-spacing: .005em;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.directory-five-columns{
+  position: relative;
+  display: flex;
+  flex-flow: column-wrap;
+  
+
 
 }
+
+.columna-footer.dos.tres.cuatro.cinco{
+  box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
+    padding: 20px;
+    
+  
+}
+
+.directory-five-columns{
+
+  margin-left: 25%;
+
+}
+
+.pie-footer{
+  margin-left: 27%;
+  padding: 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.footer-legal{
+  margin-left: 27%;
+  padding: 12px;
+}
+
+
 
 @media only screen 
   and (min-width: 768px) 

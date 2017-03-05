@@ -3,10 +3,11 @@ body{
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
 }
 
-img {
-	width: 100%;
-}
+img{
 
+  width: 100%;
+
+}
 .nav {
 	margin:0px;
 	width: 100%;
@@ -38,7 +39,7 @@ ul{
 
 }
 
-.list-item{
+.list-item, .menu, .logo{
 	cursor: pointer;
 	padding: 0px 10px;
 	transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -50,7 +51,8 @@ ul{
 
 .imagen-central{
 	width: 100%;
-	background-image: url(http://images.apple.com/v/music/e/images/overview/family_hero_large.jpg;); 
+  height:50%;
+	
 	
 }
 
@@ -135,6 +137,9 @@ div.nav {
   color: red;
   font-family: sans-serif;
 }
+
+
+
 }
 
 
@@ -159,6 +164,10 @@ div.nav {
   		padding:10px ;
   		
   	}
+    
+.directory-five-columns{
+      width: 33%;
+    }    
 
   }
 @media only screen 
@@ -177,4 +186,18 @@ div.nav {
   		width: 100%
   		padding:10px ;
   	}	
+    
+}
+
+<!--ESTO NO FUNCIONA-->
+
+@media only screen 
+  and (max-width: 320px) {
+
+.directory-five-columns{
+      width: 10%;
+      height: 400px
+    }
   }
+
+

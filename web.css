@@ -1,4 +1,4 @@
-body{
+∏body{
 	margin:0;
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;;
 }
@@ -95,6 +95,7 @@ footer{
   position: relative;
   display: flex;
   flex-flow: column-wrap;
+  padding-left: 25%;
   
 
 
@@ -110,11 +111,6 @@ footer{
   
 }
 
-.directory-five-columns{
-
-  margin-left: 25%;
-
-}
 
 .pie-footer{
   margin-left: 27%;
@@ -143,8 +139,7 @@ div.nav {
 }
 
 
-@media only screen 
-  and (max-width: 768px) {
+@media (max-width: 768px) {
 
   	.menu, .logo{
 
@@ -164,14 +159,10 @@ div.nav {
   		padding:10px ;
   		
   	}
-    
-.directory-five-columns{
-      width: 33%;
-    }    
+      
 
   }
-@media only screen 
-  and (max-width: 450px) {
+@media  (max-width: 450px) {
 
   	div.nav{
   		padding: 0;
@@ -186,18 +177,25 @@ div.nav {
   		width: 100%
   		padding:10px ;
   	}	
-    
 }
 
-<!--ESTO NO FUNCIONA-->
 
-@media only screen 
-  and (max-width: 320px) {
+@media (max-width: 320px) {
 
-.directory-five-columns{
-      width: 10%;
-      height: 400px
+  	.directory-five-columns, .pie-footer{
+  		padding-left: 0;
+  		margin: 0;
+  		flex-direction: column;
+  		
+  	}
+
+	footer{
+	display: flex;
+     flex-direction: column;
+     
     }
+
+
   }
 
 
